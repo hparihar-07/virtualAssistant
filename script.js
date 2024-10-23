@@ -5,9 +5,8 @@ let voice = document.querySelector("#voice")
 function speak(text) {
     let test = new SpeechSynthesisUtterance(text)
     test.rate = 1
-    test.pitch = 0.3
+    test.pitch = 1
     test.volume = 1
-    test.lang = "EN-GB"
     window.speechSynthesis.speak(test)
 }
 
